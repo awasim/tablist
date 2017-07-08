@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "listtabs",
+	"version": "1.0",
+
+	"description": "Lists all open tabs and their URLs",
+
+	"icons": {
+		"48": "icons/listtabs-48.png"
+	},
+
+  "permissions": [
+	"<all_urls>",
+ 	"tabs"
+   ],
+
+  "browser_action": {
+	"default_icon": "icons/listtabs-48.png",
+	"default_title": "ListTabs",
+	"default_popup": "tabslist.html"
+  },
+
+  "background": {
+	"scripts": ["listtabs.js"]
+  }
+}
